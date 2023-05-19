@@ -85,6 +85,26 @@ class Vehicle {
     }
 }
 
+class Car extends Vehicle{
+    constructor(make, model, year, color, mileage, timeForMaintenance){
+        super(make, model, year, color, mileage)
+        this.timeForMaintenance = timeForMaintenance;
+    }
+    loadPassenger(num){
+
+    }
+    start(){
+        if(this.fuel > 0){
+            return this.start = true
+        }
+    }
+    scheduleService(mileage){
+        if(this.mileage > 30000){
+           return this.timeForMaintenance = true
+        }
+    }
+}
+
 //This exports things you want to use from this "module", more info in readme
 module.exports = {
     Vehicle
